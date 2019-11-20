@@ -17,13 +17,13 @@ public int rayCountEvens(int[] numsList){
     return count;
 }
 
-//raySumEm UNTESTED!!!!!
-public int raySumEm(int[] list) {
-  sum=0;
-  for(int x; x<list.length;x++){
-    sum+=x;
-  }
-  return sum;
+//raySumEm
+public int raySumEm(int[] array) {
+    int sum = 0;
+    for (int value : array) {
+        sum += value;
+    }
+    return sum;
 }
 
 //rayAverageEm
