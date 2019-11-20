@@ -5,6 +5,27 @@ public int[] rayMakeE() {
   
 }
 
+//rayCountEvens
+public int rayCountEvens(int[] numsList){
+  int count =0;
+  for(int i=0;i < numsList.length;i++){
+    int current = numsList[i];
+      if((current%2)==0)
+        count++;
+        
+    }
+    return count;
+}
+
+//raySumEm UNTESTED!!!!!
+public int raySumEm(int[] list) {
+  sum=0;
+  for(int x; x<list.length;x++){
+    sum+=x;
+  }
+  return sum;
+}
+
 //rayAverageEm
 public double rayAverageEm(int[] nums) {
   if(nums==null || nums.length == 0)
