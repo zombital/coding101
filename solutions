@@ -107,3 +107,19 @@ public int rayBiggest(int[] arr){
         
          return max; 
 }
+
+//rayLongest
+public String rayLongest(String[] array) {
+  if(array==null||array.length==0)
+    return null;
+  int maxLength = 0;
+      String longestString = null;
+      for (String s : array) {
+          if (s.length() > maxLength) {
+              maxLength = s.length();
+              longestString = s;
+          }
+      }
+      return longestString;
+  
+}
