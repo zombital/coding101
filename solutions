@@ -123,3 +123,17 @@ public String rayLongest(String[] array) {
       return longestString;
   
 }
+
+//rayIsAScending
+public boolean rayIsAscending(int[] numArray){
+  if( numArray==null)
+    return false;
+  if(numArray.length==0)
+    return true;
+  for(int i=1; i<numArray.length;i++)
+      {
+        if(numArray[i-1]>numArray[i])
+            return false;
+      }
+      return true;
+}
