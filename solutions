@@ -165,3 +165,29 @@ public int[] rayReverseArray(int[] array) {
 }
   return array;
 }
+
+//rayMerge
+public int[] rayMerge(int[] a, int[] b) {
+ if(a==null && !(b==null))
+    return b;
+ if(!(a==null) && b==null)
+    return a;
+  if(a==null && b==null)
+    return null;
+  int[] firstArray = a; 
+  int[] secondArray = b;  
+  int length = firstArray.length + secondArray.length;   
+  int[] mergedArray = new int[length];    
+  int pos = 0;  
+  for (int element : firstArray) 
+  {  
+    mergedArray[pos] = element;  
+    pos++;              
+  }  
+  for (int element : secondArray) 
+  {  
+    mergedArray[pos] = element;  
+    pos++;  
+  }  
+  return mergedArray;  
+}  
