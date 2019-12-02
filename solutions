@@ -123,6 +123,8 @@ public String rayLongest(String[] array) {
       return longestString;
   
 }
+//
+
 
 //rayIsAScending
 public boolean rayIsAscending(int[] numArray){
@@ -165,6 +167,21 @@ public int[] rayReverseArray(int[] array) {
 }
   return array;
 }
+//rayStringToarray
+public int[] rayStringToArray(String s) {
+  int[] empty= new int[0];
+  if(s.length()==0)
+   return empty;
+  String[] str =s.split(" ");
+   int size = str.length;
+      int [] arr = new int [size];
+      for(int i=0; i<size; i++) {
+         arr[i] = Integer.parseInt(str[i]);
+      }
+      return arr;
+}
+
+
 
 //rayMerge
 public int[] rayMerge(int[] a, int[] b) {
