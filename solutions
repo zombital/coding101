@@ -123,7 +123,18 @@ public String rayLongest(String[] array) {
       return longestString;
   
 }
-//
+//rayLargestString
+public String rayLargestString(String[] strList) {
+  if(strList==null || strList.length==0)
+  return null;
+  String big="";
+  for(int i = 0;i<strList.length;i++)
+  {
+    if(big.compareTo(strList[i])<0)
+    big=strList[i];
+  }
+  return big;
+}
 
 
 //rayIsAScending
