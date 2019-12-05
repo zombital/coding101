@@ -180,7 +180,23 @@ public int[] rayStringToArray(String s) {
       }
       return arr;
 }
-
+//rayNumfreq
+public int[] rayNumFreq(int[] numList) {
+  int[] hist = new int[10];
+  if(numList==null||numList.length==0)
+  return hist;
+  for(int i=0;i<numList.length;i++)
+  {
+    for(int j =0;j<10;j++)
+    {
+      if(numList[i]==j)
+      hist[j]++;
+    }
+    
+    
+  }
+  return hist;
+}
 
 
 //rayMerge
